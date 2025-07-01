@@ -10,7 +10,7 @@ const apiClient = axios.create({
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
   async () => {
-    const response = await apiClient.get('/products');
+    const response = await apiClient.get('/project');
     return response.data;
   }
 );
